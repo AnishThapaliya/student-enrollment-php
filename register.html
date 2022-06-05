@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Kent Enrollment system</title>
+   
+</head>
+<body>
+    <div class = "header">
+   <div class="first">
+      <h1 class="logo">KENT 
+        <br> <span>INSTITUTE</span>
+        </h1>
+   </div>
+   <div class="second">
+     <ul class="order" style="float: left;">
+       <li> <a href="C:\xampp\htdocs\enrollment\landingpage.html">HOME</a></li>
+       <li> <a href="https://www.google.co.in/">About</a></li>
+       <li> <a href="#"> Admission</a></li>
+       <li> <a href="#"> Activities </a></li>
+       <li><a href="#">Academics</a></li>
+       <li><a href="#">Contact</a></li>
+      </ul>
+     
+    </div>
+    </div>
+
+   <div class="slideshowpictures">
+     <img  class="mySlides" src="./images/slideshow2.jpg"  class="banner" style="width: 100%; height: 350px;">
+     <img class="mySlides" src="./images/slideshow3.jpg" class="banner" style="width:100%; height:350px;"> 
+   </div>
+   <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    </script>
+
+<h1><b>THIS IS REGISTRATION PAGE</b> </h1>
+<style>
+  .bad{
+    background-color: #fad2d9;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  body {
+background-color: #DBF9FC;
+}
+.extras{
+  text-align: center;
+}
+.p{
+  padding: 2px;
+}
+    </style>
+    <table style="background-color:red"></table>
+  <div>
+    <ol class="bad">
+    <p>Student Name <input type="text"> </p>
+     <p> Student Address <input type="Type"> </p>
+      <p> Student Email <input type="type"> </p>
+       <p> Student Contact <Input type="type"> </p>
+        <p> Passsword <Input type="Password"></p>
+      </ol>
+      </div>
+      <div class="extras">
+     <p><button type="button"><b>Register</b></button></p>
+     <p>Already have an account?  <a href="Login.html" target="_blank">Sign in</a>.</p>
+     </div>
+ </div>
+ </body>
+</html>

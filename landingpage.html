@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="oldstyle.css">
+  <title>Document</title>
+
+</head>
+
+<body>
+  <div class="header">
+    <div class="first">
+      <h1 class="logo">KENT
+        <br> <span>INSTITUTE</span>
+      </h1>
+    </div>
+    <div class="second">
+      <ul class="order" style="float: left;">
+        <li> <a href="landingpage.html">HOME</a></li>
+        <li> <a href="register.html">Registration</a></li>
+        <li> <a href="#"> Units</a></li>
+        <li> <a href="#"> Enquiry </a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <a href="Login.html" target="_blank" class="app">Login/Signup</a>
+    </div>
+  </div>
+
+  <div class="slideshowpictures">
+    <img class="mySlides" src="./images/slideshow2.jpg" class="banner" style="width: 100%; height: 350px;">
+    <img class="mySlides" src="./images/slideshow4.jpg" class="banner" style="width:100%; height:350px;">
+    <img class="mySlides" src="./images/slideshow5.jpg" class="banner" style="width:100%; height:350px;">
+  </div>
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 3000); // Change image every 2 seconds
+    }
+  </script>
+  <!--the code for landing page begins here-->
+
+  <div class="bad">
+    <h1 class="head">Why Kent ?</h1>
+    <p class="content">
+
+
+      At Kent, we take a holistic approach in the development of our students, which is why we provide services that are
+      tailored to both their professional and personal growth.
+
+      Kent caters to diverse student learning needs and aims to identify and respond to the learning needs of all
+      students. Kent provides free and confidential counselling support.
+
+      We'd love to see you to succeed in your studies, enjoy life, develop lifelong friends, and have fun while working
+      towards your academic and career goals.
+
+      Kent holds a range of extra-curricular events and activities for students all throughout the year. These events
+      provide students with opportunities to create new friendships, develop skills, access support and receive
+      recognition as part of the LEAD program.
+
+    </p>
+  </div>
+
+
+  <div class="">
+    <h1 class="head">How To Apply</h1>
+    <div class="col">
+      <div>
+        <p><i class="fa fa-address-book icn"></i></p>
+        <p class="set">Gather Your <br> Documents</p>
+        <p class="set1">
+          Prepare and attach all required documents with your application according to Kent's entry requirements.
+        </p>
+      </div>
+    </div>
+
+    <div class="col">
+      <div>
+        <i class="fas fa-book-open icn"></i>
+        <p class="set">Fill Your <br> Form</p>
+        <p class="set1">
+          Conveniently fill in our application forms and send to Kent via email or post
+        </p>
+      </div>
+    </div>
+
+    <div class="col">
+      <div>
+        <p><i class="fas fa-book-open icn"></i></p>
+        <p class="set">Apply For <br> Addmission</p>
+        <p class="set1">
+          Successful applicants will receive our Offer of Admission.
+          By paying your tuition fees upon this, you'll receive a Confirmation of Enrolment (COE). Welcome to Kent!
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <!--the footer section starts here-->
+  <div class="footer">
+    <div class="cols">
+      <h3><span>Kent Institute</span></h3>
+      <p style="padding: 0px 10px; font-size:18px"><b>We acknowledge and pay respects to the Elders
+          and Traditional Owners of the land on which our two campuses stand.</b></p>
+    </div>
+    <div class="cols">
+      <h3><span>Campus locations</span></h3>
+      <ul>
+        <li></i>Melbourne</li>
+        <li>Sydney</li>
+        <li>Canberra</li>
+      </ul>
+    </div>
+    <div class="cols">
+      <h3 style="margin-left: -30px"><span>Quick links </span></h3>
+      <ul>
+        <li>Home</li>
+        <li>Courses</li>
+        <li>About</li>
+        <li>Admission</li>
+        <li>Contact us</li>
+      </ul>
+    </div>
+    <div class="cols">
+      <h3><span>Legal information</span></h3>
+      <ul>
+        <li>Kent Institute Aus Pty Ltd
+        </li>
+        <li>CRICOS Code - 00161E
+        </li>
+        <li> TEQSA No. - PRV12051</li>
+
+        <li>ABN - 49 003 577 302
+
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

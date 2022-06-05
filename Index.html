@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8aecce0039.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Kent Enrollment Ststem</title>
+</head>
+<!-- Header Start -->
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1 class="logo">KENT
+                <br> <span>INSTITUTE</span>
+            </h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Registration</a></li>
+                    <li><a href="#">Units </a></li>
+                    <li><a href="#">Enquiry</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn">Login</a>
+        </div>
+        <!-- Slideshow and some text -->
+        <section class="slideshow">
+            <img src="images/slideshow1.jpg" alt="StudentsImages" class="myslides">
+            <img src="images/slideshow2.jpg" alt="StudentsImages" class="myslides">
+            <img src="images/slideshow3.jpg" alt="StudentsImages" class="myslides">
+
+            <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("myslides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) { myIndex = 1 }
+                    x[myIndex - 1].style.display = "block";
+                    setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+            </script>
+        </section>
+        <!-- why kent section   -->
+        <section class="whykent">
+            <h3 class="head">Why kent?</h3>
+            <p class="content">
+                At Kent, we take a holistic approach in the development of our students, which is why we provide
+                services that are
+                tailored to both their professional and personal growth.
+
+                Kent caters to diverse student learning needs and aims to identify and respond to the learning needs of
+                all
+                students. Kent provides free and confidential counselling support.
+
+                We'd love to see you to succeed in your studies, enjoy life, develop lifelong friends, and have fun
+                while working
+                towards your academic and career goals.
+
+                Kent holds a range of extra-curricular events and activities for students all throughout the year. These
+                events
+                provide students with opportunities to create new friendships, develop skills, access support and
+                receive
+                recognition as part of the LEAD program.
+            </p>
+        </section>
+        <!-- fourth section with additional info -->
+
+        <h3 class="head">How to apply</h3>
+        <section class="threeinfo">
+            <div class="firstinfo">
+                <i class="fa-solid fa-book-open fa-3x"></i>
+                <h3 class="head">Gather Your<br>Documents</h3>
+                <p class="infocontent">
+                    Prepare and attach all required documents with your application according to Kent's entry
+                    requirements.
+                </p>
+            </div>
+            <div class="secondinfo">
+                <i class="fa-solid fa-file-circle-check fa-3x"></i>
+                <h3 class="head">Fill Your<br>forms</h3>
+                <p class="infocontent">
+                    Conveniently fill in our application forms and send to Kent via email or post
+                </p>
+            </div>
+            <div class="thirdinfo">
+                <i class="fa-solid fa-school fa-3x"></i>
+                <h3 class="head">Apply For<br>Admission</h3>
+                <p class="infocontent">
+                    Prepare and attach all required documents with your application according to Kent's entry
+                    requirements.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="contacts">
+            <div class="contact">
+                <h3><span>Kent Institute</span></h3>
+                <p><b>We acknowledge and pay respects to the Elders
+                        and Traditional Owners of the land on which our two campuses stand.</b></p>
+            </div>
+            <div class="contact">
+                <h3><span>Campus locations</span></h3>
+                <ul>
+                    <li></i>Melbourne</li>
+                    <li>Sydney</li>
+                    <li>Canberra</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3><span>Quick links </span></h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Registration</a></li>
+                    <li><a href="#">Units </a></li>
+                    <li><a href="#">Enquiry</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3><span>Legal information</span></h3>
+                <ul>
+                    <li>Kent Institute Aus Pty Ltd</li>
+                    <li>CRICOS Code - 00161E</li>
+                    <li> TEQSA No. - PRV12051</li>
+                    <li>ABN - 49 003 577 302</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <!-- End of the main content -->
+    <footer>
+        <p>Kent Institute Australia &copy;2022</p>
+    </footer>
+</body>
+
+</html>
